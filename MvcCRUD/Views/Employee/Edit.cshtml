@@ -1,0 +1,49 @@
+﻿@model Employee
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit</h2>
+
+
+<form method="post" action="/Employee/Edit">
+    @*<div class="row mb-3">
+            <label for="id" class="col-sm-2 col-form-label">Id</label>
+            <div class="col-sm-10">
+                <input type="number"  name="Id" class="form-control" id="id">
+            </div>
+        </div>*@
+    <input type="hidden" name="Id" value="@Model.Id"/>
+
+    <div class="row mb-3">
+        <label for="Name" class="col-sm-2 col-form-label">Name</label>
+        <div class="col-sm-10">
+            <input type="text" name="Name" class="form-control" id="Name" value="@Model.Name">
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label for="Age" class="col-sm-2 col-form-label">Age</label>
+        <div class="col-sm-10">
+            <input type="number" name="Age" class="form-control" id="Age" value="@Model.Age">
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label for="Salary" class="col-sm-2 col-form-label">Salary</label>
+        <div class="col-sm-10">
+            <input type="number" name="Salary" class="form-control" id="Salary" value="@Model.Salary">
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label for="DeptId" class="col-sm-2 col-form-label">DeptId</label>
+        <div class="col-sm-10">
+            <input type="number" name="DeptId" class="form-control" id="DeptId" value="@Model.DeptId">
+        </div>
+    </div>
+    <input type="submit" class="btn btn-success" />
+</form>
+
+<a href="/Employee/Index">Back To Index</a>

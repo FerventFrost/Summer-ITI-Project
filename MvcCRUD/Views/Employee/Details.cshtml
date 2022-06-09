@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var employee = (Employee)ViewData["e1"];
+
+}
+
+<h2>Details</h2>
+
+<h1>@employee.Name</h1>
+<h1>@employee.Age   Years Old</h1>
+
+<a href="/" class="btn btn-info" >Back to Index</a>

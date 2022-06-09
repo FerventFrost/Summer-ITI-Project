@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create</h2>
+
+<form method="post" action="/Employee/Create">
+    <div class="row mb-3">
+        <label for="id" class="col-sm-2 col-form-label">Id</label>
+        <div class="col-sm-10">
+            <input type="number" name="Id" class="form-control" id="id">
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label for="Name" class="col-sm-2 col-form-label">Name</label>
+        <div class="col-sm-10">
+            <input type="text" name="Name" class="form-control" id="Name">
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label for="Age" class="col-sm-2 col-form-label">Age</label>
+        <div class="col-sm-10">
+            <input type="number" name="Age" class="form-control" id="Age">
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label for="Salary" class="col-sm-2 col-form-label">Salary</label>
+        <div class="col-sm-10">
+            <input type="number" name="Salary" class="form-control" id="Salary">
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label for="DeptId" class="col-sm-2 col-form-label">DeptId</label>
+        <div class="col-sm-10">
+            <input type="number" name="DeptId" class="form-control" id="DeptId">
+        </div>
+    </div>
+    <input type="submit" class="btn btn-primary" />
+</form>
+
+<a href="/Employee/Index">Back To Index</a>
